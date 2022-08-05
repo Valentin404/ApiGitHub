@@ -1,0 +1,89 @@
+.C_center {
+    text-align: center;
+}
+
+
+
+/* User */
+.G_C_User {
+    padding: 10px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+}
+.C_User {
+    overflow-y: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.C_UserForData {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.C_UserForData img {
+    max-width: 200px;
+    width: 50%;
+    height: auto;
+    margin-right: 10px;
+}
+.G_data {
+    width: calc(50% - 10px);
+    min-width: 155px;
+}
+.center {
+    text-align: center;
+    margin: 10px;
+}
+.G_C_repos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+.C_repos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.Repo {
+    width: 100%;
+}
+.input {
+    width: calc(100% - 30px);
+    height: 40px;
+    max-width: 400px;
+    padding: 0 5px;
+    margin: 10px;
+    border: 2px solid grey;
+}
+
+
+/* Repo */
+
+.G_C_Repo {
+
+}
+.C_repos .Repo:last-child {
+    border: 2px solid grey;
+}
+
+.Repo {
+    border: 2px solid grey;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    padding: 10px;
+    color: black;;
+}

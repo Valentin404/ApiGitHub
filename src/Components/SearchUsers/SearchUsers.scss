@@ -1,0 +1,93 @@
+/* SearchUsers Start */
+%flex-center-colum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.C_Search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .C_HeaderSearch {
+        position: fixed;
+        background-color: white;
+        @extend %flex-center-colum;
+        padding: 20px;
+    }
+
+    .title {
+        margin: 0 0 10px 0;
+    }
+
+    input {
+        width: calc(100% - 30px);
+        height: 40px;
+        max-width: 400px;
+        padding: 0 5px;
+        border: 2px solid grey;
+    }
+
+    .C_Users {
+        margin-top: 105px;
+        padding: 0 0px 20px 0px;
+        @extend %flex-center-colum;
+        height: calc(100vh - 160px);
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            width: 17px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
+        }
+        .user:last-child {
+            border: 2px solid grey;
+        }
+    }
+
+}
+
+
+
+/* ListUser start */
+
+
+.user {
+    border: 2px solid grey;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 30px);
+    padding: 10px;
+    max-height: 306px;
+
+    .C_forImg_Name {
+        display: flex;
+        align-items: center;
+    }
+
+     img {
+        width: 100px;
+        height: 70px;
+    }
+    
+     h2 {
+        margin-left: 20px;
+    }
+    
+     p {
+        min-width: 60px;
+        padding: 10px 0 0 0;
+    }
+    
+}
+
