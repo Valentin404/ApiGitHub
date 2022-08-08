@@ -18,3 +18,8 @@ export interface typeGetUser {
     login: string;
     created_at: string;
   }
+
+  export interface typeAllRepos {
+    name : string | null,
+    repos : typeRepo[] | []
+ }

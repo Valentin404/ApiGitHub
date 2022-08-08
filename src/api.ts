@@ -1,5 +1,4 @@
 import axios from "axios";
-import { Dispatch, SetStateAction } from "react";
 import { typeGetUser } from "./Components/SearchUsers/interfaceSearchUsers";
 import { typeRepo } from "./Components/User/interfaceUser";
 import { local_ARR_RESULT } from "./localStorage";
